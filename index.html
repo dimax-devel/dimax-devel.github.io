@@ -5,10 +5,26 @@
     <title>Who is dimax</title>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $.getJSON("./json/content.json", function(data){
+	  switch(elementNodeReference.lang){
+	  case 'ja':
+	      var content = data.ja;
+	      break;
+	  case 'en':
+	      var content = data.en;
+	      break;
+	  default:
+	      var content = data.en;
+	  }
+	  document.getElementById('title').textContent = content.title;
+      });
+    </script>
   </head>
 
   <body>
-    <h1>Who is "dimax" ?</h1>
+    <h1 id="title">Who is "dimax" ?</h1>
     <p>
       <h2>profile</h2>
       <ul>
