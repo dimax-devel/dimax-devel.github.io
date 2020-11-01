@@ -64,3 +64,8 @@ li:after{
     -ms-transform: rotate(60deg);
     transform: rotate(60deg);
 }
+
+tr, td{
+    text-align: left;
+    vertical-align: middle;
+}
