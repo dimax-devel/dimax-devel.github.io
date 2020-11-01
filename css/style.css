@@ -1,9 +1,6 @@
 html, body {
     font-family: 'M PLUS 1p', sans-serif;
     margin: 30px;
-}
-
-body {
     background-position: left top;
     background-image: url("./static/background.jpg");
     background-color: rgba(255,255,255,0.8);
