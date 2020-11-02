@@ -8,7 +8,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
       $(function() {
-	  $("#main").load("../main.html");
 	  console.log("test4")
 	  $.getJSON("../json/content.json", function(data){
 	      switch(document.documentElement.lang){
@@ -24,6 +23,8 @@
 	      }
 	      console.log("test3")
 	  });
+	  console.log("test5")
+	  $("#main").load("../main.html");
       });
       $("#main").on("load", function(){
 	  document.getElementById("title").textContent = content.title;
