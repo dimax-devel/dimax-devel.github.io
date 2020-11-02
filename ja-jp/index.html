@@ -6,13 +6,12 @@
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>      
+    <script>
       $(function() {
-	  $("#main").load("../main.html", "lang="+document.documentElement.lang);
+	  $("#main").load("../main.html");
       });
       $.getJSON("../json/content.json", function(data){
-	  var params = (new URL(document.location)).searchParams;
-	  switch(params.get("lang")){
+	  switch(document.documentElement.lang){
 	  case "ja":
 	      var content = data.ja;
 	      break;
