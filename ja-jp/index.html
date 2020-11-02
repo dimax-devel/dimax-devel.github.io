@@ -22,6 +22,7 @@
 	      var content = data.ja;
 	      break;
 	  }
+	  console.log("test3")
       });
       $("#main").on("load", function(){
 	  document.getElementById("title").textContent = content.title;
@@ -43,7 +44,9 @@
 	  document.getElementById("language").textContent = content.language;
 	  document.getElementById("other").textContent = content.other;
 	  document.getElementById("contacts").textContent = content.contacts;
+	  console.log("test2");
       });
+      console.log("test");
     </script>
   </head>
   <body>
