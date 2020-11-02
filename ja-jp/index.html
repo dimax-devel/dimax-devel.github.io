@@ -9,20 +9,21 @@
     <script>
       $(function() {
 	  $("#main").load("../main.html");
-      });
-      $.getJSON("../json/content.json", function(data){
-	  switch(document.documentElement.lang){
-	  case "ja":
-	      var content = data.ja;
-	      break;
-	  case "en":
-	      var content = data.en;
-	      break;
-	  default:
-	      var content = data.ja;
-	      break;
-	  }
-	  console.log("test3")
+	  console.log("test4")
+	  $.getJSON("../json/content.json", function(data){
+	      switch(document.documentElement.lang){
+	      case "ja":
+		  var content = data.ja;
+		  break;
+	      case "en":
+		  var content = data.en;
+		  break;
+	      default:
+		  var content = data.ja;
+		  break;
+	      }
+	      console.log("test3")
+	  });
       });
       $("#main").on("load", function(){
 	  document.getElementById("title").textContent = content.title;
