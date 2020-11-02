@@ -10,6 +10,7 @@
       $(function() {
 	  $("#main").load("../main.html", function(){
 	      $.getJSON("../json/content.json", function(data){
+		  console.log("test2")
 		  switch(document.documentElement.lang){
 		  case "ja":
 		      var content = data.ja;
@@ -41,7 +42,7 @@
 		  document.getElementById("language").textContent = content.language;
 		  document.getElementById("other").textContent = content.other;
 		  document.getElementById("contacts").textContent = content.contacts;
-		  console.log("test2");
+		  console.log("test4");
 	      });
 	  });
       });

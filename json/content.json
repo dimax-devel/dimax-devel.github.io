@@ -6,7 +6,7 @@
 	"address":"滋賀県",
 	"career":"これまで",
 	"date":"年/月",
-	"career-items":"学歴/経歴"
+	"career-items":"学歴/経歴",
 	"career1":"京都工芸繊維大学大学院 修士課程修了",
 	"career2":"大手メーカに就職。画像処理システムおよび関連ツールの開発に携わる。",
 	"career3":"社会システム部門に異動し、エンジニアとして活動。",
@@ -16,17 +16,18 @@
 	"works":"成果物",
 	"skills":"スキル",
 	"language":"開発言語",
-	"other":"その他"
+	"other":"その他",
 	"contacts":"連絡先"
     },
     "en":{
-	"title":"who is \"dimax\" ?"
+	"title":"who is \"dimax\" ?",
+	
 	"profile":"profile",
 	"home":"home",
 	"address":"Shiga, Japan",
 	"career":"career",
 	"date":"Year/Month",
-	"career-items":"Education/Work Experience"
+	"career-items":"Education/Work Experience",
 	"career1":"Kyoto Institute of Technology, Master's Program.",
 	"career2":"Employed by a Major manufacturer. First, I have developed the Image Processing System and Some related tools.",
 	"career3":"I transferred to Social system department, and worked as the Engineer.",
@@ -36,7 +37,7 @@
 	"works":"works",
 	"skills":"skills",
 	"language":"language",
-	"other":"other"
+	"other":"other",
 	"contacts":"contacts"
     }
 }
